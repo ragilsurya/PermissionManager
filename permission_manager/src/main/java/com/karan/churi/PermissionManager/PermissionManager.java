@@ -134,8 +134,6 @@ public abstract class PermissionManager {
         new AlertDialog.Builder(activity)
                 .setMessage(message)
                 .setPositiveButton("OK", okListener)
-                .setNegativeButton("Cancel", okListener)
-                .setCancelable(false);
                 .create()
                 .show();
     }
