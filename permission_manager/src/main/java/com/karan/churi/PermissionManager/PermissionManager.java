@@ -132,6 +132,7 @@ public abstract class PermissionManager {
     }
     private void showDialogOK(Activity activity,String message, DialogInterface.OnClickListener okListener) {
         new AlertDialog.Builder(activity)
+                .setCancelable(false)
                 .setMessage(message)
                 .setPositiveButton("OK", okListener)
                 .create()
