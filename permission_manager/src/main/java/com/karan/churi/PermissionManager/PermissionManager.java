@@ -135,6 +135,7 @@ public abstract class PermissionManager {
                 .setMessage(message)
                 .setPositiveButton("OK", okListener)
                 .setNegativeButton("Cancel", okListener)
+                .setCancelable(false);
                 .create()
                 .show();
     }
